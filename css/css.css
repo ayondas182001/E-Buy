@@ -1,0 +1,704 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+
+}
+
+ul,
+ol
+{
+    list-style-type: none;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.justify_center{
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.justify_end{
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+.justify_between{
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.valign_center{
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #dddddd;
+}
+h1{
+    font-weight: 500;
+    font-size: 32px;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+/* top header part start */
+#top_header{
+    background-color: #444444;
+}
+.left_header{
+    width: 50%;
+}
+.left_header ul{
+    float: left;
+}
+.left_header ul li{
+    float: left;
+}
+.left_header ul li a{
+    padding: 20px 22px 20px 22px;
+    display: block;
+    font-size: 18px;
+    border-right: 1px solid #fff;
+    color: #dddddd;
+}
+.left_header ul li:last-child a{
+    border: none;
+}
+.right_header{
+    width: 50%;
+}
+.right_header ul{
+    float: right;
+}
+.right_header ul li{
+    float: left;
+}
+.right_header ul li a{
+    padding: 20px 22px 20px 22px;
+    display: block;
+    color: #dddddd;
+    font-size: 18px;
+    border-right: 1px solid #fff;
+}
+.right_header ul li:last-child a{
+    border: none;
+}
+/* top header part end */
+
+/* nav bar start */
+#nav_bar{
+    background-color: white;
+    
+}
+.logo{
+    width: 33%;
+    padding: 32px 0 32px 0;
+}
+.menu{
+    width: 33%;
+}
+/*
+.menu ul{
+    float: right;
+}
+*/
+.menu ul li{
+    float: left;
+    position: relative;
+}
+.menu ul li a{
+    color: #727272;
+    font-family:'raleway';
+    font-size: 15px;
+    padding: 50px 7px;
+    display: block;
+}
+
+.menu ul li a:after{
+    content: '';
+    position: absolute;
+    background: black;
+    width:0;
+    height:5px;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    -webkit-transition: 1.5s;
+    -webkit-transition: 0.9s;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+.menu ul li a:hover:after{
+    opacity: 1;
+    width: 100%;
+}
+.search{
+    width: 33%;
+}
+.search ul{
+    float: right;
+}
+.search ul li{
+    float: left;
+}
+.search ul li i{
+    padding-right: 15px;
+}
+.search ul li a{
+    padding: 50px 8px;
+    display: block;
+    font-size: 18px;
+    color: red;
+}
+/* nav bar end */
+
+/*banner part start*/
+.banner_part{
+    height: 600px;
+    background-position: center !important;
+    background-size: cover !important;
+    position: relative;
+}
+.banner_part .overlay{
+    background-image: url(../image/overlay.png);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+}
+part_1{
+    margin-top: 10px;
+}
+.part_1,.Part_2{
+    width: 50%;
+}
+.overlay h3{
+    font-family:'raleway';
+    font-size: 55px;
+    font-weight: 500;
+    padding: 143px 0 5px 0;
+    color: red;
+}
+.overlay h2{
+    color: aliceblue;
+    font-weight: 400;
+    font-size: 40px;
+    font-family:'raleway';
+    padding-bottom: 20px;
+}
+.overlay p{
+    line-height:25px;
+    
+}
+.overlay button{
+    margin-top: 60px;
+}
+.part_1{
+    margin-left: 0px;
+}
+.overlay button{
+    background: none;
+    color: white;
+    border: 1px solid #fff;
+    padding: 20px 35px;
+    margin-left: 0px;
+    border-radius: 5px;
+    font-family: 'raleway';
+    font-weight: 500;
+}  
+.overlay .bt{
+    margin-left: 29px;
+}
+.overlay button:hover{
+    background: #de4644;
+    cursor: pointer;
+}
+/*banner part end*/
+
+/*offer part start*/
+#offer{
+    background-color: #f1f1f1;
+    padding: 35px 40px;
+}
+.shipping,
+.support,
+.cashback{
+    width: 33%;
+    text-align: center;
+}
+.shipping p,
+.support p,
+.cashback p{
+    color: #444444;
+    font-family: 'open sans';
+    padding: 32px 0 0 0;
+}
+/*offer part end*/
+
+/*product part start*/
+#product_items{
+    background-color: white;
+    padding: 107px;
+}
+.product{
+    width: 30%;
+    position: relative;
+}
+.product img{
+    width: 100%;
+    display: block;
+}
+.product .overlay{
+    position: absolute;
+    background-image: url(../image/shape.png);
+    width:90%;
+    height: 150px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+    text-align: center;
+    bottom: 5%;
+/*    padding:10px 10px;*/
+    
+}
+.product .overlay h2{
+    font-size: 40px;
+    line-height: 1px;
+    margin-top: 20px;
+}
+.product .overlay h2 span{
+    font-size: 30px;
+    font-weight: 500;
+}
+#product_items .product .overlay button{
+    margin-top: -1px;
+    padding: 15px 19px;
+}
+ /*product part end*/
+
+/*featured part start*/
+#featured{
+    margin-top:5px;
+}
+h1{
+    text-align: center;
+    font-weight: 300;
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+}
+h1::after{
+    content: '';
+    position: absolute;
+    background-image:url(../image/underline.png);
+    width:172px;
+    height:7px;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+}
+h1:hover::after{
+    opacity: 1;
+    margin-bottom: -10px;
+}
+.NEW {
+    text-align: center;
+}
+.nav{
+    width: 470px;
+    padding-top: 60px;
+
+}
+
+.nav ul li a{
+    float: left;
+    padding: 0 20px;
+    border-right: 1px solid black;
+    display: block;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+}
+.nav ul li:last-child a{
+    border: none;
+}
+.nav ul li a:hover{
+    color: red;
+}
+.caption span{
+    float: right;
+}
+.caption h3{
+    font-weight: 500;
+}
+.img{
+    width: 25%;
+    padding: 30px 10px;
+}
+.product_img img{
+    width: 100%;
+    display: block;
+}
+.product_img{
+    position: relative;
+}
+.product_img .overlay{
+    position: absolute;
+    width: 80px;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: rgba(0, 0, 0, .7);
+    opacity: 0;
+
+}
+.product_img .overlay:hover{
+    opacity: 1;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    width: 100px;
+    
+}
+.product_img .overlay li{
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+}
+.img i{
+    font-size: 20px;
+    color: #de4644;
+    color: aliceblue;
+}
+.product_img .overlay li{
+    margin-bottom: 30px;
+    margin-top: 50px;
+    color: red;
+}
+.product_img .overlay li:hover{
+    color: red;
+    background-color: #de4644;
+}
+/*featured part end*/
+
+/*new product part start*/
+#new_product{
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+.laptop{
+    width: 40%;
+    margin-left: -220px;
+}
+.description{
+    width: 60%;
+    margin-right: 10PX;
+    padding: 10PX 30PX;
+}
+.description h4{
+    font-size: 27px;
+    font-family: 'raleway';
+    font-weight: 500;
+    color: #222222;
+}
+.description h5{
+    font-size: 20px;
+    font-family: 'raleway';
+    font-weight: 400;
+    color: #222222;
+}
+.description h2{
+    font-size: 40px;
+    font-family: 'raleway';
+    font-weight: 500;
+    color: #de4644;
+    margin-bottom: 25px;
+}
+.description h6{
+    font-size: 15PX;
+    color: #444444;
+    line-height: 25px;
+    margin-bottom: 25PX;
+    font-weight: 200;
+}
+.description ul li {
+    float:left;
+    width: 78px;
+    height: 80px;
+    border: 1px solid #444444;
+    margin-top: 30px;
+    margin-right: 33px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+}
+.description p{
+    color: #444444;
+}
+/*new product part end*/
+/*latest product start*/
+#latest_product{
+    margin: 100px 0;
+}
+/*latest product end*/
+
+/*testimonial part start*/
+#testimonial_banner .banner_part{
+    height: 400px;
+    background-position: center !important;
+    background-size: cover !important;
+    position: relative;
+}
+.banner_part .overlay{
+    background-image: url(../image/testimonial-shape.png);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+}
+.banner_part{
+    margin-top: 30px;
+}
+.man1, .man2{
+    width: 50%;
+    margin-top: 45px;
+    padding-right: 10px;
+}
+.man2{
+    margin-right: -30px;
+}
+.man_img{
+    width: 25%;
+    margin-left:-15px;
+}
+.man_description h4{
+    color: white;
+    font-weight: 300;
+}
+.man_description{
+    width: 75%;
+    margin-right: -10px;
+    font-size: 20px;
+}
+.man_description .des{
+    margin-top: 30px;
+}
+#testimonial_banner{
+    margin-bottom: 100px;
+}
+/*testimonial part end*/
+
+/*blog part start*/
+.blog{
+    margin-top: 30px;
+    width: 33%;
+    padding: 10px;
+}
+.blog img{
+    width: 100%;
+    
+}
+.blogimg{
+    position: relative;
+    overflow: hidden;
+    
+}
+.blogimg .overlay{
+    position: absolute;
+    background: url(../image/blogshape.png);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding:5px 10px;
+    opacity: 0;
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+}
+.blogimg:hover .overlay{
+    opacity: 1;
+}
+.blog p{
+    color: white;
+}
+.blog i{
+    font-size: 20px;
+    color: aliceblue;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    margin-top: 100px;
+}
+.blog i:hover{
+    cursor: pointer;
+}
+.blog ul{
+    margin-top: 100px;
+}
+.blog ul li{
+    float: left;
+}
+.blog ul li a{
+    padding: 0 15px;
+    color: white;
+}
+.blogcaption h3{
+    margin: 20px 0;
+    font-weight: 500;
+}
+.blogcaption p{
+    font-size: 15px;
+    color: #444444;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.blogcaption a{
+    font-size: 17px;
+    font-family: 'raleway';
+    font-weight: 500;
+    color: black;
+    margin-top: 15px;
+}
+.blogcaption a:hover{
+    color: red;
+}
+/*blog part end*/
+
+/*contact part start*/
+#contact_part{
+    background-color: #353535;
+    margin-top: 20px;
+}
+.contact_one, 
+.contact_two, 
+.contact_three,
+.contact_four{
+    width: 25%;
+    margin: 65px 0;
+    
+/*    padding: 20px;*/
+}
+.contact_one img{
+    margin-bottom: 30px;
+}
+.contact_one p{
+    font-size: 13px;
+    color: #dddddd;
+    font-weight: 400;
+    line-height: 20px;
+}
+.contactdes{
+    margin-top: 30px;
+}
+.contact_two{
+    margin-bottom: 30px;
+}
+.contact_two h4{
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.contact_two i{
+    padding-right: 22px;
+}
+.contact_two p{
+    line-height: 40px;
+}
+.contact_three h4{
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.contact_three {
+   padding-left: 30px;
+}
+.contact_three p{
+    line-height: 30px;
+}
+.contact_three a:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.contact_four h4{
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.contact_four input{
+    height: 38px;
+    width: 270px;
+    background: none;
+    border: 1px solid white;
+    padding: 5px;
+    color: #ababab;
+    padding: 15px;
+}
+.contact_four button{
+    width: 80px;
+    height: 40px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+}
+.contact_four button:hover{
+    background: #de4644;
+    color: white;
+}
+.contact_four h3{
+    margin: 20px 0;
+    font-size: 25px;
+    color: white;
+    font-weight: 300;
+}
+.contact_four i{
+    padding: 15px;
+    font-size: 25px;
+    background: white;
+    border-radius: 50%;
+    height: 50px;
+    width:50px;
+    margin-left: 8px;
+}
+.contact_four i:hover{
+    color: white;
+    background: #de4644;
+}
+/*contact part end*/
